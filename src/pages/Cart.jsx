@@ -7,7 +7,7 @@ import {
   deleteItemFromCart,
   removeItemFromCart,
   clearCart,
-} from '../component/cart/cartSlice'
+} from '../component/cart/CartSlice'
 
 const Cart = () => {
   const dispatch = useDispatch()
