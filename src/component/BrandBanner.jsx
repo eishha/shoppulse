@@ -4,9 +4,9 @@ import Marquee from 'react-fast-marquee'
 const BrandBanner = () => {
   const imgPaths = [
     '/versace-logo.svg',
-    '/zara-logo-1 1.svg',
-    '/prada-logo-1 1.svg',
-    '/gucci-logo-1 1.svg',
+    '/zara-logo-1-1.svg',
+    '/prada-logo-1-1.svg',
+    '/gucci-logo-1-1.svg',
     '/calvinklein-logo.svg',
   ]
   return (
