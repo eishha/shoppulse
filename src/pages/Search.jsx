@@ -10,7 +10,6 @@ const Search = () => {
   const { products, loading } = useProducts()
   const { searchResults } = useSearch(products)
 
-  // Filter products based on search query
   const filteredProducts = products.filter((product) =>
     product.title.toLowerCase().includes(query.toLowerCase())
   )

@@ -21,7 +21,7 @@ const Products = () => {
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
         <div className="md:col-span-1">
           <h3 className="text-lg font-bold mb-4">Filters</h3>
-          {/* Filter options would go here */}
+         
           <div className="space-y-4">
             <div>
               <h4 className="font-medium mb-2">Categories</h4>
@@ -40,7 +40,6 @@ const Products = () => {
             </div>
             <div>
               <h4 className="font-medium mb-2">Price</h4>
-              {/* Price range slider would go here */}
             </div>
           </div>
         </div>

@@ -5,7 +5,7 @@ export default function useSearch(products) {
   const [searchResults, setSearchResults] = useState([])
   const [showResults, setShowResults] = useState(false)
 
-  // Search function
+  
   const performSearch = (query) => {
     if (!query.trim()) {
       setSearchResults([])
@@ -16,11 +16,11 @@ export default function useSearch(products) {
       product.title.toLowerCase().includes(query.toLowerCase())
     )
 
-    setSearchResults(results.slice(0, 5)) // Show top 5 results
+    setSearchResults(results.slice(0, 5)) 
     setShowResults(true)
   }
 
-  // Debounce search to avoid excessive API calls
+  
   useEffect(() => {
     if (!searchQuery) {
       setSearchResults([])

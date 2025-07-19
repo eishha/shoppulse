@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Hero = () => {
   const numbers = [
@@ -15,7 +16,7 @@ const Hero = () => {
           style={{ backgroundImage: `url(/Rectangle.svg)` }}
         ></div>
 
-        {/* Content container */}
+        
         <div className="flex flex-col gap-8 relative z-10 px-4 pt-16 md:pt-24 max-w-xl ml-8 md:ml-16">
           <h1 className="heading text-3xl md:text-5xl lg:text-6xl">
             FIND CLOTHES THAT MATCHES YOUR STYLE
@@ -26,13 +27,13 @@ const Hero = () => {
             style.
           </p>
 
-          <button
+          <Link to="/products"><button
             className="bg-black w-full rounded-full py-4 text-white text-lg font-semibold mb-8  transition-all duration-300 transform
                       hover:bg-gray-800 hover:scale-105
                       active:scale-95 focus:outline-none focus:ring-2 focus:ring-gray-400 cursor-pointer"
           >
             Shop Now
-          </button>
+          </button></Link>
           <div className="flex flex-row justify-between items-center mb-8">
             {numbers.map((data, idx) => (
               <div

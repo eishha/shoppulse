@@ -9,16 +9,11 @@ const ContactForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
 
-    // Simple email validation
     if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
       setError('Please enter a valid email address')
       return
     }
 
-    // Form submission logic would go here (API call, etc.)
-    console.log('Submitting email:', email)
-
-    // Show success message
     setSubmitted(true)
     setError('')
     setEmail('')
@@ -41,7 +36,7 @@ const ContactForm = () => {
             value={email}
             onChange={(e) => {
               setEmail(e.target.value)
-              setError('') // Clear error when typing
+              setError('') 
             }}
             placeholder="Enter your email..."
             className="p-2 px-6 w-full md:w-80 bg-white rounded-full text-gray-800 placeholder-gray-400"

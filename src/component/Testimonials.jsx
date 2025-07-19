@@ -20,11 +20,10 @@ const Testimonials = () => {
 
         const data = await response.json()
 
-        // Map API data to our testimonial structure
         const formattedTestimonials = data.map((comment, index) => ({
           id: comment.id,
-          name: comment.name.split(' ')[0], // Use first name only
-          rating: Math.min(5, Math.max(1, Math.floor(Math.random() * 4) + 2)), // Random rating between 2-5
+          name: comment.name.split(' ')[0], 
+          rating: Math.min(5, Math.max(1, Math.floor(Math.random() * 4) + 2)), 
           review: comment.body,
           avatar: `https://i.pravatar.cc/150?img=${index + 10}`,
         }))
@@ -40,7 +39,7 @@ const Testimonials = () => {
     fetchTestimonials()
   }, [])
 
-  // Handle navigation
+  
   const nextTestimonial = () => {
     setCurrentIndex((prev) => (prev + 3) % testimonials.length)
   }
@@ -51,10 +50,10 @@ const Testimonials = () => {
     )
   }
 
-  // Get testimonials to display
+  
   const visibleTestimonials = testimonials.slice(currentIndex, currentIndex + 3)
 
-  // If we don't have enough at the end, wrap around
+ 
   if (visibleTestimonials.length < 3) {
     visibleTestimonials.push(
       ...testimonials.slice(0, 3 - visibleTestimonials.length)

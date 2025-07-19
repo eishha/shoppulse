@@ -2,7 +2,6 @@ import React from 'react'
 import '../App.css'
 
 const TestimonialCard = ({ rating, name, review, avatar }) => {
-  // Generate star rating display
   const renderStars = () => {
     const stars = []
     for (let i = 1; i <= 5; i++) {

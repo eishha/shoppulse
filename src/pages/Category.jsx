@@ -12,7 +12,6 @@ const Category = () => {
     (product) => product.category === category
   )
 
-  // Format category name for display
   const formatName = (name) => {
     if (name === "men's clothing") return "Men's Fashion"
     if (name === "women's clothing") return "Women's Fashion"

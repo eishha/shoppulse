@@ -34,7 +34,7 @@ const BestSelling = () => {
       </div>
       <div className="flex justify-center mt-8 md:mt-12">
         <Link to={'/products'}>
-          <button className="rounded-full border border-gray-300 h-12 md:h-14 px-8 md:px-12 cursor-pointer hover:bg-gray-50 transition-colors">
+          <button className="bg-black text-white rounded-full border border-gray-300 h-12 md:h-14 px-8 md:px-12 cursor-pointer hover:bg-gray-50 hover:text-black transition-colors">
             View All
           </button>
         </Link>

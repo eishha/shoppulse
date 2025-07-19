@@ -39,7 +39,6 @@ const Navbar = () => {
     setShowSearchResults(false);
   };
 
-  // Close search results when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (searchRef.current && !searchRef.current.contains(event.target)) {
@@ -82,7 +81,6 @@ const Navbar = () => {
               />
             </form>
             
-            {/* Search Results Dropdown */}
             {showSearchResults && searchResults.length > 0 && (
               <div className="absolute top-full left-0 right-0 bg-white border border-gray-200 rounded-lg shadow-lg mt-1 z-50 max-h-60 overflow-y-auto">
                 {searchResults.map((product) => (

@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const BrowseByCategory = () => {
-  // API categories mapped to display names
   const categories = [
     {
       id: "men's clothing",
