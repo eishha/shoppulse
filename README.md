@@ -1,12 +1,102 @@
-# React + Vite
+# 🛍️ ShopPulse
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive e-commerce demo built with **React**, **Redux Toolkit**, **Vite**, and **Tailwind CSS**.  
+Perfect for showcasing your frontend skills and understanding of real-world web app development.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- **Product Catalog**: Browse, search, and filter products by category.
+- **Product Details**: View detailed product info and add to cart.
+- **Shopping Cart**: Add, remove, and update product quantities.
+- **Responsive Design**: Looks great on desktop, tablet, and mobile.
+- **Modern UI**: Clean, bold hero section, animated banners, and brand logos.
+- **State Management**: Uses Redux Toolkit for cart state.
+- **API Integration**: Fetches products from [Fake Store API](https://fakestoreapi.com/).
+- **Accessible**: Keyboard and screen-reader friendly.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🖥️ Demo
+
+> **Live Demo:** [https://shoppulse-gamma.vercel.app](https://shoppulse-gamma.vercel.app)  
+> 
+---
+
+## 📦 Getting Started
+
+### 1. **Clone the repository**
+```bash
+git clone https://github.com/yourusername/shoppulse.git
+cd shoppulse
+```
+
+### 2. **Install dependencies**
+```bash
+npm install
+```
+
+### 3. **Run the development server**
+```bash
+npm run dev
+```
+Visit [http://localhost:5173](http://localhost:5173) in your browser.
+
+---
+
+##  Project Structure
+
+```
+src/
+  component/      # Reusable UI components (Navbar, Hero, ProductCard, etc.)
+  pages/          # Page components (Home, Products, Cart, etc.)
+  hooks/          # Custom React hooks (useProducts, useSearch)
+  store/          # Redux store and slices
+  public/         # Static assets (images, logos, etc.)
+```
+
+---
+
+## 🛠️ Tech Stack
+
+- **React 19**
+- **Redux Toolkit**
+- **Vite**
+- **Tailwind CSS**
+- **React Router**
+- **Fake Store API** (for demo data)
+
+---
+
+## 📝 Customization
+
+- **Images:** All brand logos, social icons, and category images are in the `/public` directory.
+- **API:** You can swap out the Fake Store API for your own backend or another public API.
+- **Styling:** Easily customizable with Tailwind utility classes.
+
+---
+
+## 🧑‍💻 Author
+
+- **Eisha Mabqool**  
+  
+  [https://github.com/eishha](https://github.com/eishha)
+
+---
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+## 🙏 Acknowledgements
+
+- [Fake Store API](https://fakestoreapi.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Vercel](https://vercel.com/) for free hosting
+
+---
+
+**Feel free to fork, use, and improve this project! If you like it, give it a ⭐ on GitHub.**
