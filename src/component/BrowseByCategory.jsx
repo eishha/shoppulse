@@ -7,12 +7,12 @@ const BrowseByCategory = () => {
     {
       id: "men's clothing",
       name: 'Men Clothing',
-      image: 'public/categoryimages/image-11.png',
+      image: '/categoryimages/image-11.png',
     },
     {
       id: "women's clothing",
       name: 'Women Clothing',
-      image: 'public/categoryimages/image-12.png',
+      image: '/categoryimages/image-12.png',
     },
   ]
 

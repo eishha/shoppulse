@@ -1,10 +1,10 @@
 import '../App.css'
 import ContactForm from './ContactForm'
 const icons = [
-  'src/assets/github.svg',
-  'src/assets/fb.svg',
-  'src/assets/insta.svg',
-  'src/assets/twitter.svg',
+  '/github.svg',
+  '/fb.svg',
+  '/insta.svg',
+  '/twitter.svg',
 ]
 
 const Footer = () => {
