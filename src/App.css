@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+.lightText{
+    font-weight:lighter;
+    font-size: 12px;
+}
+
+@media (min-width: 768px) {
+    .lightText {
+        font-size: 14px;
+    }
+}
+
+.heading{
+    font-weight:800;
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+    text-transform:uppercase;
+}
+
+@media (min-width: 768px) {
+    .heading {
+        font-size: 36px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .heading {
+        font-size: 48px;
+    }
+}
